@@ -22,7 +22,7 @@ python setup.py develop
 
 ### 模型权重
 
-下载[VIT-B-32](https://github.com/uyzhang/JCLIP/releases/download/jclip/ViT-B-32.pkl)或利用转换脚本，将PyTorch权重转换为Jittor权重。
+下载[VIT-B-32](https://github.com/uyzhang/JCLIP/releases/tag/%E6%9D%83%E9%87%8D)或利用转换脚本，将PyTorch权重转换为Jittor权重。
 
 ```python
 import torch
