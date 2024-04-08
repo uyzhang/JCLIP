@@ -98,7 +98,7 @@ with jt.no_grad():
 test_features = jt.cat(test_features).numpy()
 
 # testing
-with open('result_ft.txt', 'w') as save_file:
+with open('result.txt', 'w') as save_file:
     i = 0
     predictions = classifier.predict_proba(test_features)
     for prediction in predictions.tolist():
