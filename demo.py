@@ -4,7 +4,7 @@ from PIL import Image
 
 jt.flags.use_cuda = 1
 
-model, preprocess = clip.load("/home/zy/.cache/clip/ViT-B-32.pkl")
+model, preprocess = clip.load("ViT-B-32.pkl")
 
 image = preprocess(Image.open("CLIP.png")).unsqueeze(0)
 
