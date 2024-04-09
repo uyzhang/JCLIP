@@ -190,7 +190,7 @@ class CLIP(nn.Module):
     def build_attention_mask(self):
         mask = jt.empty((self.context_length, self.context_length))
         mask.fill_(float("-inf"))
-        mask = jt.triu_(mask, 1)  # zero out the lower diagonal
+        mask = jt.triu(mask, 1)  # zero out the lower diagonal
         return mask
 
     @property
